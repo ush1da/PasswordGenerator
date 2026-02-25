@@ -1,0 +1,252 @@
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 1.1rem;
+  color: #bb86fc;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+nav a {
+  color: #03dac6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-top: 20px;
+}
+
+input,
+textarea {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #444;
+  padding: 8px;
+  width: 250px;
+}
+
+button {
+  background-color: #bb86fc;
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.image-section img {
+  display: block;
+  max-width: 200px;
+}
+
+.result-container {
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #bb86fc;
+}
+
+.password-display {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.password-display input {
+  flex-grow: 1;
+  font-family: monospace;
+  font-size: 1.2rem;
+  color: #03dac6;
+  background: #000;
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+.strength-fire {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+/* Групування елементів (Fieldset) */
+fieldset {
+  border: 1px solid #333;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+legend {
+  color: #bb86fc;
+  padding: 0 10px;
+}
+
+.setting-item,
+.checkbox-group,
+.toggle-pass {
+  margin-bottom: 15px;
+}
+
+.checkbox-group label {
+  display: block;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+/* Кнопки */
+.btn-generate {
+  width: 100%;
+  background-color: #bb86fc;
+  color: #000;
+  padding: 12px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-copy {
+  background-color: #03dac6;
+  color: #000;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+/* Блок "Чому це безпечно" */
+.info-block {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.security-list {
+  list-style: none;
+  padding: 0;
+}
+
+.security-list li {
+  margin-bottom: 10px;
+  color: #03dac6;
+  font-size: 0.9rem;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  background-color: #1e1e1e;
+}
+
+.price-table thead tr {
+  background-color: #bb86fc;
+  color: #000;
+  text-align: left;
+  font-weight: bold;
+}
+
+.price-table th,
+.price-table td {
+  padding: 12px 15px;
+  border: 1px solid #333;
+}
+
+.price-table tbody tr:nth-of-type(even) {
+  background-color: #252525;
+}
+
+.price-table tfoot {
+  font-style: italic;
+  color: #03dac6;
+}
+
+.media-section {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 20px 0;
+}
+
+.contact-form fieldset {
+  border: 1px solid #333;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+}
+
+.contact-form legend {
+  color: #bb86fc;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #03dac6;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #252525;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.checkbox-confirm {
+  margin: 15px 0;
+  font-size: 0.9rem;
+}
+
+.btn-submit {
+  background-color: #bb86fc;
+  color: #000;
+  border: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-submit:hover {
+  background-color: #a370db;
+}
+
+small {
+  color: #888;
+  font-size: 0.8rem;
+}

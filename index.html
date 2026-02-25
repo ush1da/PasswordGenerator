@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <html lang="uk">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+        name="description"
+        content="SecurePass — швидкий та надійний генератор паролів для захисту ваших даних."
+      />
+
+      <title>SecurePass — Генератор паролів</title>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <header>
+        <h1>SecurePass — Сервіс створення паролів</h1>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="catalog.html">Типи</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <section>
+          <h2>Створіть свій ідеальний пароль</h2>
+          <p>
+            Наш сервіс допомагає генерувати стійкі до злому комбінації символів.
+          </p>
+        </section>
+
+        <div class="flex-container">
+          <section class="form-section">
+            <div class="result-container">
+              <label for="password-result">Ваш пароль:</label>
+              <div class="password-display">
+                <input
+                  type="text"
+                  id="password-result"
+                  value="Натисніть Генерувати"
+                  readonly
+                />
+                <button type="button" class="btn-copy" onclick="copyPassword()">
+                  Скопіювати
+                </button>
+              </div>
+              <p>Складність: <span id="strength-label">---</span></p>
+            </div>
+
+            <form id="password-form">
+              <fieldset>
+                <legend>Параметри безпеки</legend>
+
+                <div class="setting-item">
+                  <label>Довжина: <span id="length-value">12</span></label
+                  ><br />
+                  <input
+                    type="range"
+                    id="length-slider"
+                    min="8"
+                    max="32"
+                    value="12"
+                    oninput="updateLength()"
+                  />
+                </div>
+
+                <div class="checkbox-group">
+                  <label
+                    ><input type="checkbox" id="upper" checked /> Великі букви
+                    (A-Z)</label
+                  >
+                  <label
+                    ><input type="checkbox" id="lower" checked /> Маленькі букви
+                    (a-z)</label
+                  >
+                  <label
+                    ><input type="checkbox" id="numbers" checked /> Цифри
+                    (0-9)</label
+                  >
+                  <label
+                    ><input type="checkbox" id="symbols" /> Спецсимволи
+                    (!@#$%)</label
+                  >
+                </div>
+
+                <button
+                  type="button"
+                  class="btn-generate"
+                  onclick="generatePassword()"
+                >
+                  Згенерувати новий пароль
+                </button>
+              </fieldset>
+            </form>
+          </section>
+
+          <aside class="info-block">
+            <h3>Чому це безпечно?</h3>
+            <ul class="security-list">
+              <li>✔ Пароль створюється випадково</li>
+              <li>✔ Ми не зберігаємо ваші дані</li>
+              <li>✔ Стійкий алгоритм</li>
+            </ul>
+            <div class="image-section">
+              <img
+                src="https://img.icons8.com/color/144/password.png"
+                alt="Іконка безпеки"
+              />
+            </div>
+          </aside>
+        </div>
+      </main>
+
+      <footer>
+        <p>
+          &copy; 2026 Лабораторна робота №1. Рівень «Базовий». Рюмшин Кирило
+          П-31.
+        </p>
+      </footer>
+
+      <script src="script.js"></script>
+    </body>
+  </html>
+</html>
